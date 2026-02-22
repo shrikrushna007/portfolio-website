@@ -4,7 +4,7 @@ Welcome to the hidden layer of this portfolio! Beyond the standard resume and pr
 Use this guide to uncover every secret built into the code.
 
 🖱️ Click & Hover Secrets
-The Arcade Portal (Secret Clicker):  How to trigger: Rapidly click the main hero heading (<h1> "Building intelligent systems...") 5 times.
+The Arcade Portal (Secret Clicker):  How to trigger: Rapidly click the main hero heading (<h1> "Building intelligent systems...\"\) 5 times.
 
 What happens: A retro game overlay launches where you can play fully functional clones of Bug Catcher, Snake, and Tetris.
 
