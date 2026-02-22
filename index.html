@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chadala Shri Krushna Vardhan | Full Stack & AI/ML Developer</title>
+  <link rel="stylesheet" href="styles.css" />
+<meta name="description" content="Portfolio of Chadala Shri Krushna Vardhan, a Full Stack Developer & AI/ML Enthusiast." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Space+Grotesk:wght@400;500;700&family=Cinzel:wght@400;700&family=Cinzel+Decorative:wght@700&family=Bangers&family=Pirata+One&family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="preloader"><div class="loader"></div></div>
+  <div id="theme-background-1" class="theme-bg"></div>
+  <div id="theme-background-2" class="theme-bg"></div>
+  <div id="scroll-progress"></div>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-orb orb-3"></div>
+  <div class="grid-overlay"></div>
+  <canvas id="particle-canvas"></canvas>
+
+  <header class="site-header">
+    <a class="brand" href="#home">SHRI<span>KRUSHNA</span></a>
+    <button class="menu-toggle" aria-label="Toggle menu">MENU</button>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+      <button id="theme-switcher-btn" class="btn-ghost" style="padding: 0.4rem 0.8rem; border-radius: 8px;">Themes</button>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero reveal">
+      <div class="hero-text">
+        <p class="eyebrow">Full Stack & AI/ML Developer</p>
+        <h1>Building intelligent systems and scalable web solutions</h1>
+        <p class="hero-copy">I am Chadala Shri Krushna Vardhan, a B.Tech student in CSE(AIML) with expertise in MERN stack, Python, and Machine Learning.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">Explore Projects</a>
+          <a class="btn btn-ghost" href="#contact">Let's Connect</a>
+          <a class="btn btn-outline" href="resume.pdf" download>Download Resume</a>
+        </div>
+        <div class="social-links">
+          <a href="https://github.com/shrikrushna007" target="_blank" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+          <a href="https://www.linkedin.com/in/shri-krushna-vardhan" target="_blank" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+          <a href="mailto:chadalashrikrushnavardhan@gmail.com" aria-label="Email"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></a>
+        </div>
+        <ul class="quick-stats">
+          <li><strong>1571</strong><span>LeetCode</span></li>
+          <li><strong>1496</strong><span>CodeChef</span></li>
+          <li><strong>1050</strong><span>CodeForces</span></li>
+          <li><strong>Top 1%</strong><span>NPTEL Python</span></li>
+          <li><strong>96.5%</strong><span>Intermediate</span></li>
+        </ul>
+      </div>
+      <div class="hero-visual">
+        <canvas id="hero-particles"></canvas>
+      </div>
+    </section>
+
+    <section id="about" class="panel reveal">
+      <h2>About Me</h2>
+      <p id="about-text">
+        I am a Computer Science Engineering student specializing in AI/ML at VNR VJIET. I have a strong foundation in Python, C++, and Java, with practical experience in the MERN stack and Machine Learning. I am passionate about building automated systems and scalable web applications.
+      </p>
+    </section>
+
+    <section id="experience" class="panel reveal">
+      <h2>Experience & Education</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="timeline-date">Experience</span>
+          <div class="timeline-content">
+            <h3>Automated Valuation System Developer</h3>
+            <h4>Alfago Research LLP</h4>
+            <p>Built an automated DCF valuation system ingesting CMIE Prowess data via a serverless pipeline (AWS S3, RDS PostgreSQL). Deployed a FastAPI-based valuation engine to compute 10-year intrinsic value forecasts.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-date">Sep 2023 - Apr 2027</span>
+          <div class="timeline-content">
+            <h3>B.Tech - CSE (AIML)</h3>
+            <h4>VNR VJIET, Hyderabad</h4>
+            <p>CGPA: 8.2. Focused on AI/ML, Data Structures, and Web Technologies.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-date">June 2021 - May 2023</span>
+          <div class="timeline-content">
+            <h3>Intermediate Education</h3>
+            <h4>Narayana Junior College</h4>
+            <p>Score: 96.5%. JEE Mains: 94.87% (Math: 98.46%). JEE Advanced: 71 marks.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="panel reveal">
+      <h2>Skills & Expertise</h2>
+      <div id="tag-cloud-container"></div>
+    </section>
+
+    <section id="projects" class="reveal">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-preview"></div>
+          <h3>EchoSphere</h3>
+          <p>An interactive blog platform where writers and storytellers share ideas and connect with a global audience.</p>
+          <div class="tags"><span>MERN Stack</span><span>React</span><span>MongoDB</span></div>
+          <div class="project-links"><a href="#">Live Demo</a><a href="#">Source Code</a></div>
+        </article>
+        <article class="project-card">
+          <div class="project-preview"></div>
+          <h3>Tennis Elo</h3>
+          <p>Developed an ML model that predicts the Elo rating of tennis players across different surfaces with advanced feature engineering.</p>
+          <div class="tags"><span>Machine Learning</span><span>Python</span><span>Pandas</span></div>
+          <div class="project-links"><a href="#">Live Demo</a><a href="#">Source Code</a></div>
+        </article>
+        <article class="project-card">
+          <div class="project-preview"></div>
+          <h3>AI Chatbot UI</h3>
+          <p>Responsive AI chatbot integrating Gemini API for role-based chatting with a clean, animated UI.</p>
+          <div class="tags"><span>React</span><span>NodeJS</span><span>Express</span><span>Gemini API</span></div>
+          <div class="project-links"><a href="#">Live Demo</a><a href="#">Source Code</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="achievements" class="reveal">
+      <h2 class="section-title">Achievements</h2>
+      <div class="blog-grid">
+        <article class="blog-card" data-content="The Reliance Foundation Undergraduate Scholarships select students based on a rigorous selection process that involves an aptitude test and evaluation of their academic and personal achievements. This scholarship aims to support meritorious students from all corners of India to pursue their undergraduate education, empowering them to become future leaders and contributors to society.">
+          <div class="blog-header">
+            <span class="blog-date">Scholarship</span>
+            <button class="share-btn" aria-label="Share achievement"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg></button>
+          </div>
+          <h3>Reliance Foundation UG Scholarship</h3>
+          <p>Achieved a prestigious scholarship through rigorous examination evaluating reasoning, mental ability, and aptitude skills.</p>
+          <button class="read-more">Read More &rarr;</button>
+        </article>
+        <article class="blog-card" data-content="The National Programme on Technology Enhanced Learning (NPTEL) is a project of MHRD initiated by seven Indian Institutes of Technology (IIT) along with the Indian Institute of Science, Bangalore. Achieving a score of 97/100 places me in the top 1% of candidates nationwide for the Python Programming course, demonstrating a deep understanding of data structures, algorithms, and problem-solving in Python.">
+          <div class="blog-header">
+            <span class="blog-date">Certification</span>
+            <button class="share-btn" aria-label="Share achievement"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg></button>
+          </div>
+          <h3>NPTEL Top 1%</h3>
+          <p>Secured Top 1% in NPTEL Python course with a score of 97/100.</p>
+          <button class="read-more">Read More &rarr;</button>
+        </article>
+      </div>
+    </section>
+
+    
+
+  
+
+    <section id="certifications" class="reveal">
+      <h2 class="section-title">Certifications</h2>
+      <div class="cert-grid">
+        <article class="cert-card">
+          <span class="cert-provider">Google Skills Boost</span>
+          <h3>Generative AI</h3>
+          <p>Foundational training in Generative AI, Large Language Models, and their applications.</p>
+        </article>
+        <article class="cert-card">
+          <span class="cert-provider">Udemy</span>
+          <h3>Machine Learning</h3>
+          <p>Comprehensive course covering supervised and unsupervised learning algorithms.</p>
+        </article>
+        <article class="cert-card">
+          <span class="cert-provider">Internshala</span>
+          <h3>Tableau</h3>
+          <p>Data visualization and analytics training using Tableau for business intelligence.</p>
+        </article>
+        <article class="cert-card">
+          <span class="cert-provider">NPTEL</span>
+          <h3>Python Programming</h3>
+          <p>In-depth course on Python programming, data structures, and algorithms.</p>
+        </article>
+        <article class="cert-card">
+          <span class="cert-provider">Self-Paced</span>
+          <h3>MERN Stack</h3>
+          <p>Full-stack web development mastery covering MongoDB, Express, React, and Node.js.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="panel reveal">
+      <h2>Get In Touch</h2>
+      <div class="contact-info">
+        <p>Mobile: +91 7993814041</p>
+        <div class="email-wrapper">
+          <span>Email: <span id="contact-email">chadalashrikrushnavardhan@gmail.com</span></span>
+          <button id="copy-email-btn" aria-label="Copy email to clipboard" title="Copy to Clipboard"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></button>
+        </div>
+      </div>
+      <form class="contact-form" action="#" method="POST">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="text" name="subject" placeholder="Subject" required>
+        <textarea name="message" placeholder="Your message" rows="5" required></textarea>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="social-links footer-socials">
+        <a href="https://github.com/shrikrushna007" target="_blank" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+        <a href="https://www.linkedin.com/in/shri-krushna-vardhan" target="_blank" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+        <a href="mailto:chadalashrikrushnavardhan@gmail.com" aria-label="Email"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></a>
+      </div>
+      <p>&copy; <span id="current-year"></span> Chadala Shri Krushna Vardhan. Engineered for tomorrow.</p>
+      <p style="font-size: 0.7rem; opacity: 0.3; margin-top: 0.5rem;">Hint: &uarr; &uarr; &darr; &darr; &larr; &rarr; &larr; &rarr; b a</p>
+    </div>
+  </footer>
+
+  <button id="scrollTopBtn" aria-label="Scroll to top">&uarr;</button>
+
+  <div id="theme-switcher-panel" class="theme-switcher">
+    <div class="theme-switcher-header">
+      <h3>Select a Theme</h3>
+      <button id="close-theme-switcher" aria-label="Close theme switcher">&times;</button>
+    </div>
+    <div id="theme-list" class="theme-list">
+      <!-- Themes will be populated by JS -->
+    </div>
+  </div>
+
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
+
+  <div id="project-modal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="close-modal" aria-label="Close modal">&times;</button>
+      <h3 id="modal-title"></h3>
+      <p id="modal-desc"></p>
+      <div id="modal-tags" class="tags"></div>
+      <div id="modal-links" class="project-links"></div>
+    </div>
+  </div>
+
+  <div id="blog-modal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="close-modal" id="close-blog-modal" aria-label="Close modal">&times;</button>
+      <h3 id="blog-modal-title"></h3>
+      <p id="blog-modal-date" style="color: var(--cyan); font-size: 0.9rem; margin-bottom: 1rem;"></p>
+      <div id="blog-modal-body" style="line-height: 1.6; color: var(--text);"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
