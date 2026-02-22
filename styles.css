@@ -1175,6 +1175,16 @@ body.idle #scrollTopBtn {
   transform: scaleX(-1);
 }
 
+/* Flashlight / Lumos Mode */
+.flashlight-mode::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: radial-gradient(circle 250px at var(--cursor-x, 50%) var(--cursor-y, 50%), transparent 0%, rgba(0, 0, 0, 0.98) 100%);
+  pointer-events: none;
+}
+
 /* Cinematic Noise Overlay */
 .noise-overlay {
   position: fixed;

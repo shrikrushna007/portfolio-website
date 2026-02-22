@@ -423,6 +423,10 @@ if (cursorDot && cursorOutline) {
     mouseX = e.clientX;
     mouseY = e.clientY;
     
+    // Update CSS variables for Flashlight mode
+    document.documentElement.style.setProperty('--cursor-x', `${mouseX}px`);
+    document.documentElement.style.setProperty('--cursor-y', `${mouseY}px`);
+
     // Dot follows instantly
     cursorDot.style.left = `${mouseX}px`;
     cursorDot.style.top = `${mouseY}px`;
@@ -987,6 +991,29 @@ document.addEventListener("keydown", (e) => {
         bgMusic.src = 'assets/music/theme-kate.mp3';
         bgMusic.play().catch(e => console.error("Audio play failed:", e));
       }
+    }
+    if (cheatCodeBuffer.endsWith("lumos")) {
+      document.body.classList.toggle("flashlight-mode");
+    }
+    if (cheatCodeBuffer.endsWith("snap")) {
+      const elements = Array.from(document.querySelectorAll("p, h1, h2, h3, img, .btn, .project-card, .blog-card, .cert-card, .timeline-item"));
+      // Fisher-Yates Shuffle
+      for (let i = elements.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [elements[i], elements[j]] = [elements[j], elements[i]];
+      }
+      // Select 50% of elements to snap
+      const toSnap = elements.slice(0, Math.floor(elements.length / 2));
+      
+      toSnap.forEach((el, i) => {
+        setTimeout(() => {
+          el.style.transition = "all 2s ease-out";
+          el.style.transform = `translate(${Math.random() * 40 - 20}px, -20px) scale(0.9) rotate(${Math.random() * 10 - 5}deg)`;
+          el.style.opacity = "0";
+          el.style.filter = "blur(8px) grayscale(100%)";
+        }, i * 50); // Staggered effect
+      });
+      setTimeout(() => alert("🫰 I am inevitable."), 1000);
     }
   }
 });
