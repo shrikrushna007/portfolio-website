@@ -4,7 +4,7 @@ Welcome to the hidden layer of this portfolio! Beyond the standard resume and pr
 Use this guide to uncover every secret built into the code.
 
 🖱️ Click & Hover Secrets
-The Arcade Portal (Secret Clicker):  How to trigger: Rapidly click the main hero heading (<h1> "Building intelligent systems...\"\) 5 times.
+The Arcade Portal (Secret Clicker): How to trigger: Rapidly click the main hero heading <h1> "Building intelligent systems..." 5 times.
 
 What happens: A retro game overlay launches where you can play fully functional clones of Bug Catcher, Snake, and Tetris.
 
@@ -18,9 +18,9 @@ The Admin Vault:
 
 How to trigger: Click anywhere on the copyright line in the footer (next to the year).
 
-What happens: A prompt will ask for an admin password. Type  to reveal the site's hidden lifetime visitor counter
+What happens: A prompt will ask for an admin password. Type to reveal the site's hidden lifetime visitor counter.
 
-**Don't tap on Download Resume**
+Don't tap on Download Resume
 
 ⌨️ Keyboard Cheat Codes
 Just type these words anywhere on the webpage to trigger special visual modes. Type them again (or refresh) to toggle them off.
